@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" name="Default Test Name" parallel="false" thread-count="1" verbose="3">
+    <listeners>
+        <listener class-name="com.sprint.iice_tests.utilities.test_util.CustomListener"/>
+    </listeners>
+    <test name="Default Test Name - chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.sprint.iice_tests.feature_runners.API_EXP.SprintRestTestRunner"/>
+        </classes>
+    </test>
+</suite>
